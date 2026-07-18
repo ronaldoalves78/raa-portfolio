@@ -1012,15 +1012,20 @@ h3,
 @media (max-width: 680px) {
   .site-header__inner {
     align-items: center;
+    gap: var(--space-2);
     padding-block: var(--space-3);
   }
 
   .site-brand__text {
-    max-width: 10.5rem;
+    max-width: min(10.5rem, 42vw);
   }
 
   .site-brand__text small {
-    display: none;
+    display: block;
+    overflow: hidden;
+    font-size: clamp(0.5rem, 2.5vw, 0.625rem);
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .menu-toggle {
