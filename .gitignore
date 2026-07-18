@@ -1,0 +1,7 @@
+# Arquivos temporarios do sistema e dos editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+tmp/
